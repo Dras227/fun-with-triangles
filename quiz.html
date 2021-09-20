@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triz</title>
+</head>
+<body>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+    <h1>Triangle Quiz</h1>
+    <form  class="quiz-form">
+        <div class="question-container">
+            <p>
+                What is the third angle for the triangle where the angle1 = 45deg and angle2 = 45deg
+                <label ><input type="radio" name="quesiton1" value="60deg">60deg</label>
+                <label ><input type="radio" name="quesiton1" value="45deg">45deg</label>
+                <label ><input type="radio" name="quesiton1" value="90deg">90deg</label>
+            </p>
+        </div>
+        <div class="question-container">
+            <p>
+                If a triangle has an angle of 90deg what is it called?
+                <label ><input type="radio" name="quesiton2" value="acute angled ">Acute Angled</label>
+                <label ><input type="radio" name="quesiton2" value="right angled">Right Angled</label>
+                <label ><input type="radio" name="quesiton2" value="obtuse angled">obtuse angled</label>
+            </p>    
+        </div>
+        
+    </form>
+    <button id="ans-submit">Submit Answers</button>
+     <div id="output"></div>
+    <script src="quiz.js"></script>
+</body>
+</html>
