@@ -1,31 +1,28 @@
 const inputs = document.querySelectorAll(".inp-angle")
 const isTriangleBtn = document.querySelector("#is-triangle-btn")
-const outputEl = document.querySelector("#output")
-
+var outputEl = document.querySelector(".output")
+outputEl.style.display = "none";
 function calcSumOfAngles(angle1,angle2,angle3) {
     return angle1+angle2+angle3;
 }
 
-function checkInputs()
-{
-   var msg = false;
-    if((!inputs[0].value && inputs[0].value<0))
-        return msg = "Enter the Angle 1"
-    else if((!inputs[1].value && inputs[1].value<0))
-        return msg = "Enter the Angle 2"
-    else if((!inputs[2].value && inputs[2].value<0))
-        return msg = "Enter the Angle 3"
-    else return msg;
-
-}
 
 
 function  isTraiangle() {
-    var flag = checkInputs()
-    if(flag)
-    {
-        output.innerHTML=flag;
-    }
+  outputEl.style.display = "block";
+     if((!inputs[0].value))
+        outputEl.innerHTML = "Enter the Angle 1";
+    else if(inputs[0].value<0)
+        outputEl.innerHTML = "Angle 1 cannot be -ve";
+    else if((!inputs[1].value))
+        outputEl.innerHTML = "Enter the Angle 2";
+    else if(inputs[1].value<0)
+        outputEl.innerHTML = "Angle 2 cannot be -ve";
+    else if((!inputs[2].value))
+        outputEl.innerHTML = "Enter the Angle 2";
+    else if(inputs[2].value<0)
+        outputEl.innerHTML = "Angle 2 cannot be -ve";
+    
     else
     {
         var sum = calcSumOfAngles(parseInt(inputs[0].value),parseInt(inputs[2].value),parseInt(inputs[2].value));

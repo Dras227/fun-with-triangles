@@ -4,36 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="triz.css">
     <title>Triz</title>
 </head>
 <body>
     <style>
-        label {
-            display: block;
+        .question-container {
+            border: 1px solid black;
+            margin:10px;
+            border-radius: 10px;
+            padding:7px 13px;
         }
     </style>
-    <h1>Triangle Quiz</h1>
+     <nav class="navigation">
+        <div class="nav-brand">Funny Triangles</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="index.html" class="link">Home</a>
+            </li>
+            <li class="list-item-inline   link-active">
+                <a href="quiz.html" class="link">Triz</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="hypotenuse.html" class="link ">Hypotenuuuuse</a>
+            </li>
+            </li><li class="list-item-inline">
+                <a href="area.html" class="link ">AreA</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Triangle Quiz</h1>
     <form  class="quiz-form">
         <div class="question-container">
             <p>
-                What is the third angle for the triangle where the angle1 = 45deg and angle2 = 45deg
-                <label ><input type="radio" name="quesiton1" value="60deg">60deg</label>
-                <label ><input type="radio" name="quesiton1" value="45deg">45deg</label>
-                <label ><input type="radio" name="quesiton1" value="90deg">90deg</label>
+                What is a triangle?? 
+                <label ><input type="radio" name="quesiton1" value="A geometric figure"/>A geometric figure</label>
+                <label ><input type="radio" name="quesiton1" value="45deg"/>An form of architecture</label>
+                <label ><input type="radio" name="quesiton1" value="90deg"/>A piece of art</label>
             </p>
         </div>
         <div class="question-container">
             <p>
-                If a triangle has an angle of 90deg what is it called?
-                <label ><input type="radio" name="quesiton2" value="acute angled ">Acute Angled</label>
-                <label ><input type="radio" name="quesiton2" value="right angled">Right Angled</label>
-                <label ><input type="radio" name="quesiton2" value="obtuse angled">obtuse angled</label>
+               How many dimensions does a triangle have? 
+                <label ><input type="radio" name="quesiton2" value="1"/>1</label>
+                <label ><input type="radio" name="quesiton2" value="45deg"/>2</label>
+                <label ><input type="radio" name="quesiton2" value="90deg"/>3</label>
+            </p>
+        </div>
+        <div class="question-container">
+            <p>
+                What's the name of the type of maths that studies the sides and angles of triangles?
+                <label ><input type="radio" name="quesiton3" value="Geology"/>Geology</label>
+                <label ><input type="radio" name="quesiton3" value="Geometry"/>Geometry</label>
+                <label ><input type="radio" name="quesiton3" value="Trigonometry"/>Trigonometry</label>
+                <label ><input type="radio" name="quesiton3" value="Triology"/>Triology</label>
+
+            </p>    
+        </div><div class="question-container">
+            <p>
+                Which group does the triangle belong to?
+                <label ><input type="radio" name="quesiton4" value="Geology"/>Polydor</label>
+                <label ><input type="radio" name="quesiton4" value="Geometry"/>Potter</label>
+                <label ><input type="radio" name="quesiton4" value="Polygon"/>Polygon</label>
+                <label ><input type="radio" name="quesiton4" value="Triology"/>Triology</label>
+
+            </p>    
+        </div><div class="question-container">
+            <p>
+                What is the longest side of a triangle called?
+                <label ><input type="radio" name="quesiton5" value="Hyppo"/>Hyppo</label>
+                <label ><input type="radio" name="quesiton5" value="Hypopothamus"/>Hypopothamus</label>
+                <label ><input type="radio" name="quesiton5" value="Hypotenuse"/>Hypotenuse</label>
+                <label ><input type="radio" name="quesiton5" value="Triology"/>Triology</label>
+
             </p>    
         </div>
         
     </form>
+    </div>
+    <div class="submit-btn">
     <button id="ans-submit">Submit Answers</button>
-     <div id="output"></div>
+    </div>
+     <div class="output"> </div>
+    <p>.</p>
     <script src="quiz.js"></script>
 </body>
 </html>

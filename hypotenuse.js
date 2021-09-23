@@ -1,8 +1,11 @@
 var sides = document.querySelectorAll(".sides");
 var ansButton = document.querySelector("#ans-check");
-var output = document.querySelector("#output");
+var output = document.querySelector(".output");
+output.style.display = "none";
 
 ansButton.addEventListener("click", () => {
+      output.style.display = "block";
+
     if(!((sides[0].value && sides[1].value)))
     {
         output.innerHTML = "Please enter both the sides"
@@ -16,7 +19,7 @@ ansButton.addEventListener("click", () => {
     {
         var ans = Math.sqrt(parseInt(sides[0].value*sides[0].value)+parseInt(sides[1].value*sides[1].value));
 
-        output.innerHTML = ans;
+        output.innerHTML = "c = "+ans;
     }
     
 })

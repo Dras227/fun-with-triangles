@@ -113,16 +113,6 @@ button {
     margin-top: 20px;
 }
 
-button {
-    margin-top: 20px;
-    padding: 7px 13px;
-    background-color: #06B6D4;
-    border-radius: 20px;
-    border:1px solid black;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 h1 {
     padding: 20px;
@@ -136,27 +126,3 @@ h1 {
      display: inline;
     
  }
-
- .output {
-     display: block;
-     width: 100%;
-     max-width: 400px;
-     min-width: 200px;
-     text-align: center;
-     
-     margin-top:20px;
-     color:black;
-     border:none;
-
-     padding: 5px 0;
-     border-radius: 5px;
-     background: #54d5ec;
-margin:auto;
-
- }
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-}

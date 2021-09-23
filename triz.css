@@ -7,8 +7,7 @@
     --quaternary-color: #CEE9F0;
 }
 
-body {
-}
+
 
 * {
     font-family: "IBM Plex Sans Arabic",sans-serif;
@@ -83,80 +82,62 @@ body {
     width: 100%;
     max-width:500px;
     min-width:200px;
-    text-align: center;
+    
+    text-align: justify;
     margin:auto;
 }
 /* nav bar end */
-
-input,
-label {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    min-width: 200px;
-    text-align: center;
-    margin: auto;
-    padding: 5px 0;
-    border-radius: 5px;
-}
-
-input {
-    border: 1px solid grey;
-}
-
-button {
-    margin-top: 20px;
-    padding: 7px 13px;
-}
-
-#output {
-    margin-top: 20px;
-}
 
 button {
     margin-top: 20px;
     padding: 7px 13px;
     background-color: #06B6D4;
     border-radius: 20px;
-    border:1px solid black;
+    border: 1px solid black;
     color: white;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;;
+    text-align :center;
 }
-
+p {
+    padding: 0;
+    margin: 0;
+}
 h1 {
     padding: 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin:auto;  
+    padding-bottom: 10px;
 }
 
- input[type="radio"] {
-     margin-right: 0;
-     display: inline;
- }
-.question-container label {
-     display: inline;
-    
- }
+input[type="radio"] {
+    width:auto;
+    margin:10px;
+    display: inline;
 
+}
+
+.submit-btn {
+    text-align: center;
+    margin:20px;                
+}
  .output {
      display: block;
      width: 100%;
      max-width: 400px;
      min-width: 200px;
      text-align: center;
-     
-     margin-top:20px;
-     color:black;
-     border:none;
-
+     margin: auto;
+     margin-top: 20px;
+     color: black;
+     border: 1px solid var(--secondary-color);
+    margin-bottom: 20px;
      padding: 5px 0;
      border-radius: 5px;
      background: #54d5ec;
-margin:auto;
+     text-align: center;
 
  }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-}

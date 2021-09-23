@@ -1,8 +1,11 @@
 const triAttributes = document.querySelectorAll(".tri-attributes")
 const checkBtn = document.querySelector("#check-area")
-const outDiv = document.querySelector("#output")
+var outDiv = document.querySelector(".output")
 var msg = ""
+outDiv.style.display = "none";
+
 checkBtn.addEventListener("click", ()=>{
+      outDiv.style.display = "block";
 
     if(!(triAttributes[0] && triAttributes[0].value))
     {

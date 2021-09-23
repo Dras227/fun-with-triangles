@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funny-Triangles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+        <nav class="navigation">
+            <div class="nav-brand">Funny Triangles</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline link-active">
+                    <a href="index.html" class="link">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="quiz.html" class="link">Triz</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="hypotenuse.html" class="link ">Hypotenuuuuse</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="area.html" class="link ">AreA</a>
+                </li>
+            </ul>
+        </nav>
+    <div class="container">
+    
     <h1>Is Triangle</h1>
-
-    <label for="angle1">angle l (in Deg)</label>
+    <label for="angle1">angle 1 (in Deg)</label>
     <input type="number" value = "60" class="inp-angle">
     <label for="angle2">angle 2 (in Deg)</label>
     <input type="number" value = "60" class="inp-angle">
     <label for="angle3">angle 3 (in Deg)</label>
     <input type="number" value = "60" class="inp-angle">
     <button id="is-triangle-btn">Is Triangle</button>
-    <div id="output"> </div>
+    <div class="output"> </div>
     <script src="app.js"></script>
+    </div>
 </body>
 </html>
