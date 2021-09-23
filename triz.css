@@ -124,7 +124,7 @@ input[type="radio"] {
     margin:20px;                
 }
  .output {
-     display: block;
+     display: none;
      width: 100%;
      max-width: 400px;
      min-width: 200px;
